@@ -13,7 +13,7 @@ class EmailAddressParser
     email = emails.collect do |row|
       data = row.split(", ")
     end
-    # data.flatten.uniq
+    data.flatten.uniq
     end
   
 end
