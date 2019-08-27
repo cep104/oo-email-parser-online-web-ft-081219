@@ -11,11 +11,7 @@ class EmailAddressParser
 	end
 	
 	def parse 
-    row = emails.split.collect do |address| #emails.split splits up individual emails by , 
-      address.split(',') 
-      binding.pry
-    end
-    .flatten.uniq 
+    emails.delete(',').split.uniq
   end 
  
 	
