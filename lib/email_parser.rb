@@ -8,7 +8,10 @@ class Emailparser
     @email = email
   end
   
-  def parse
-    emails.delete(',').split.uniq
-  end
-end
+  def parse 
+    email.split.collect do |email_name|
+      email_name.split(',') 
+    end
+    .flatten.uniq 
+  end 
+end 
