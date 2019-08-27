@@ -9,11 +9,11 @@ class EmailAddressParser
 		@emails= emails
 	end
 	
-	def parse
-	 emails.collect do |email_adress|
-	   email_adress.split(",")
-	  end
-	  .flatten.uniq
-  end
+	def parse 
+    row = emails.collect do \
+    end
+   
+  end 
+end 
 	
 end
