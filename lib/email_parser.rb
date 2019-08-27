@@ -11,8 +11,8 @@ class EmailAddressParser
 	end
 	
 	def parse 
-    emails.delete(',').split.uniq #first deletes the "," then splits the email addresses then makes sure they are unique. 
-    binding.pry
+    emails.delete(',').split.uniq #first deletes the "," then splits the email addresses then makes sure they are unique. saying just split is the same as saying .split(" ")
+    # binding.pry
   end 
  
 	
