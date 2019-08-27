@@ -10,10 +10,11 @@ class EmailAddressParser
 	end
 	
 	def parse 
-    email = emails.collect do |row|
-      data = row.split(", ")
+    row = emails.split.collect do |address|
+      address.split(',') 
     end
-    data.flatten.uniq
-    end
-  
+    .flatten.uniq 
+  end 
+end 
+	
 end
