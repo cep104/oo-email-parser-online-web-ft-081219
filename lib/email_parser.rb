@@ -5,8 +5,6 @@
 class Emailparser 
   attr_accessor :parser
   def initialize(csv)
-   array = []
-    @csv = csv
-    array << @csv
+
   end
 end
