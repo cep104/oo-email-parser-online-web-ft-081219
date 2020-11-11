@@ -10,7 +10,7 @@ def initialize(emails)
 end
 
 def parse
-    binding.pry
+    # binding.pry
     emails.split(/, | /).uniq
     # emails.split(/[,\ ]+/).uniq also works
   end
